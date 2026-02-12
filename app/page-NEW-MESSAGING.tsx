@@ -112,7 +112,7 @@ export default function Home() {
             </CardHeader>
             <CardContent className="space-y-4 text-slate-300">
               <p>
-                RSI < 30 works in <span className="text-green-400 font-semibold">trending markets</span>.
+                RSI &lt; 30 works in <span className="text-green-400 font-semibold">trending markets</span>.
               </p>
               <p>
                 It <span className="text-red-400 font-semibold">LOSES</span> in choppy markets (whipsaws through oversold).
