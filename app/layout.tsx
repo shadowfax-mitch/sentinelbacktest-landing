@@ -5,18 +5,23 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SentinelBacktest - Find Hidden Biases in Your Trading Strategy",
-  description: "We caught $300K in fake profits from backtest bias. Automated audit finds where your strategy will fail before you go live.",
-  keywords: "backtest validation, trading bias detection, algo trading audit, backtest overfitting, same-bar entry bias",
+  title: "Sentinel Algo - AI-Powered Backtest Validation",
+  description: "Powered by Claude Sonnet 4.5. We caught $300K in fake profits from backtest bias. Find the bugs before you go live.",
+  keywords: "AI trading validation, backtest validation, trading bias detection, algo trading audit, Claude AI, backtest overfitting",
+  icons: {
+    icon: '/sentinel-logo.jpg',
+  },
   openGraph: {
-    title: "SentinelBacktest - We Caught $300K in Fake Profits",
-    description: "Automated bias detection for algorithmic traders. Find the bugs your backtests can't see.",
+    title: "Sentinel Algo - AI-Powered Backtest Validation",
+    description: "Powered by Claude Sonnet 4.5. Automated bias detection for algorithmic traders.",
     type: "website",
+    images: ['/sentinel-hero-logo.jpg'],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SentinelBacktest - We Caught $300K in Fake Profits",
-    description: "Automated bias detection for algorithmic traders. Find the bugs your backtests can't see.",
+    title: "Sentinel Algo - AI-Powered Backtest Validation",
+    description: "Powered by Claude Sonnet 4.5. Find the bugs your backtests can't see.",
+    images: ['/sentinel-hero-logo.jpg'],
   },
 };
 

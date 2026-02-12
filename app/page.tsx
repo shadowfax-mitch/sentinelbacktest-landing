@@ -22,6 +22,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-4 py-20 md:py-32 max-w-6xl mx-auto">
         <div className="text-center space-y-8">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/sentinel-hero-logo.jpg" 
+              alt="Sentinel Algo" 
+              className="w-64 h-64 md:w-80 md:h-80 object-contain"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="text-red-500">19 Trades in 7 Years.</span>
             <br />
