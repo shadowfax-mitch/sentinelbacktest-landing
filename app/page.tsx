@@ -10,11 +10,33 @@ export default function Home() {
   const [platform, setPlatform] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Integrate with ConvertKit
-    console.log('Email:', email, 'Platform:', platform);
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+    
+    try {
+      const res = await fetch('https://api.convertkit.com/v3/forms/9082725/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          api_key: 'Ak1AieraF9kC-T-CxNMmYA',
+          email: email,
+          fields: { platform: platform }
+        })
+      });
+      
+      if (res.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    } catch {
+      alert('Connection error. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -479,9 +501,10 @@ export default function Home() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6 h-auto"
+                disabled={isSubmitting}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6 h-auto disabled:opacity-50"
               >
-                Join Waitlist → Get Free Analysis
+                {isSubmitting ? 'Subscribing...' : 'Join Waitlist → Get Free Analysis'}
               </Button>
             </form>
           ) : (
