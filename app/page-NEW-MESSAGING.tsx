@@ -363,82 +363,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="px-4 py-20 max-w-6xl mx-auto bg-gradient-to-r from-blue-900/20 to-purple-900/20 -mx-4">
-        <div className="px-4 max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              📊 The Sentinel Report
-            </h2>
-            <p className="text-xl text-slate-300">
-              Weekly AI-powered trading intelligence. Real strategy testing results. Zero BS.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Newsletter Info */}
-            <div className="space-y-6">
-              <div className="bg-slate-800/50 border border-blue-500/30 rounded-lg p-6">
-                <div className="text-blue-400 font-bold text-sm mb-2">LATEST ISSUE #001</div>
-                <h3 className="text-2xl font-bold text-white mb-3">
-                  Why 96% of Strategies Fail
-                </h3>
-                <p className="text-slate-300 mb-4">
-                  847 strategies tested this week. 23 profitable (2.7%). FOMC regime shift analysis. 
-                  V5 Fractal Reversion update. Deep-dive: What is regime-aware trading?
-                </p>
-                <a 
-                  href="/newsletter-001.html"
-                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition"
-                >
-                  Read Issue #001 →
-                </a>
-              </div>
-
-              <div className="text-slate-400 text-sm">
-                <p className="mb-2 font-semibold text-white">Published every Sunday, 7:00 PM CT</p>
-                <ul className="space-y-1">
-                  <li>✓ Overnight strategy testing results</li>
-                  <li>✓ Market regime analysis</li>
-                  <li>✓ Wins AND losses (full transparency)</li>
-                  <li>✓ 100% free, unsubscribe anytime</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-blue-400 mb-2">23,520+</div>
-                <div className="text-slate-400">Strategies Tested</div>
-              </div>
-              <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-red-400 mb-2">96.7%</div>
-                <div className="text-slate-400">Failure Rate</div>
-              </div>
-              <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-green-400 mb-2">100%</div>
-                <div className="text-slate-400">Transparency</div>
-              </div>
-              <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-purple-400 mb-2">Weekly</div>
-                <div className="text-slate-400">New Insights</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <Button
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-6 h-auto"
-              onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Subscribe Below → Get Weekly Reports
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Waitlist Form */}
       <section id="waitlist" className="px-4 py-20 max-w-3xl mx-auto">
         <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-8 md:p-12">
@@ -503,10 +427,10 @@ export default function Home() {
             © 2026 Sentinel. Built by a trader who tested 23,520+ strategies.
           </p>
           <div className="flex gap-6">
-            <a href="https://twitter.com/Sentinel_Algo" className="text-slate-400 hover:text-blue-400">
+            <a href="https://twitter.com/SentinelTrading" className="text-slate-400 hover:text-blue-400">
               Twitter/X
             </a>
-            <a href="/newsletter.html" className="text-slate-400 hover:text-blue-400">
+            <a href="#" className="text-slate-400 hover:text-blue-400">
               Newsletter
             </a>
           </div>
