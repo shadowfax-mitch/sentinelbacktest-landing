@@ -6,21 +6,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sentinel Algo - AI-Powered Backtest Validation",
-  description: "Powered by Claude Sonnet 4.5. We caught $300K in fake profits from backtest bias. Find the bugs before you go live.",
+  description: "Powered by Claude AI. We caught $300K in fake profits from backtest bias. Find the bugs before you go live.",
   keywords: "AI trading validation, backtest validation, trading bias detection, algo trading audit, Claude AI, backtest overfitting",
   icons: {
     icon: '/sentinel-logo.jpg',
   },
   openGraph: {
     title: "Sentinel Algo - AI-Powered Backtest Validation",
-    description: "Powered by Claude Sonnet 4.5. Automated bias detection for algorithmic traders.",
+    description: "Powered by Claude AI. Automated bias detection for algorithmic traders.",
     type: "website",
     images: ['/sentinel-hero-logo.jpg'],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sentinel Algo - AI-Powered Backtest Validation",
-    description: "Powered by Claude Sonnet 4.5. Find the bugs your backtests can't see.",
+    description: "Powered by Claude AI. Find the bugs your backtests can't see.",
     images: ['/sentinel-hero-logo.jpg'],
   },
 };

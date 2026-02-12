@@ -38,9 +38,14 @@ export default function Home() {
             <span className="text-green-400">14,477 Trades Later.</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            One trader was ready to abandon their Al Brooks strategy. We found 3 silent bugs sabotaging it from the inside. 
+            One trader was ready to abandon their Al Brooks strategy. <span className="text-blue-400 font-semibold">Claude AI found 3 silent bugs</span> sabotaging it from the inside. 
             <span className="text-white font-semibold"> Profit factor went from 0.88 to 3.18.</span> Walk-forward validated across 7 years.
           </p>
+          <div className="mt-6 inline-block bg-blue-900/30 border border-blue-600/50 rounded-lg px-6 py-3">
+            <p className="text-blue-300 font-semibold">
+              🤖 Powered by Claude — The world's most advanced AI reasoning model
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
@@ -462,9 +467,12 @@ export default function Home() {
       {/* How It Works */}
       <section className="px-4 py-20 max-w-6xl mx-auto bg-slate-900/30 -mx-4">
         <div className="px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
-            How SentinelBacktest Works
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">
+            How Sentinel Works
           </h2>
+          <p className="text-xl text-center text-blue-400 mb-16 max-w-3xl mx-auto">
+            Claude AI analyzes your strategy like a paranoid quant analyst
+          </p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center space-y-4">
@@ -473,7 +481,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold">Upload Your Strategy</h3>
               <p className="text-slate-300">
-                Python code, C# NinjaTrader strategies, or describe your logic for manual review
+                Python code, C# NinjaTrader strategies, or describe your logic for AI analysis
               </p>
             </div>
 
@@ -481,9 +489,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto">
                 2
               </div>
-              <h3 className="text-2xl font-bold">We Scan for Critical Bugs</h3>
+              <h3 className="text-2xl font-bold">AI Deep Analysis</h3>
               <p className="text-slate-300">
-                Trend detection errors, circuit breaker bugs, risk-reward inversions, exit management mismatches
+                Claude examines logic flow, edge cases, and statistical traps that humans miss
               </p>
             </div>
 
@@ -491,32 +499,33 @@ export default function Home() {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto">
                 3
               </div>
-              <h3 className="text-2xl font-bold">Get Your Audit Report</h3>
+              <h3 className="text-2xl font-bold">Get AI-Generated Report</h3>
               <p className="text-slate-300">
-                Line-by-line analysis, before/after comparison, specific fix recommendations
+                Line-by-line analysis, before/after comparison, specific fix recommendations in plain English
               </p>
             </div>
           </div>
 
           <div className="mt-16 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-6 text-center">What We Catch</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center">What Claude AI Catches</h3>
+            <p className="text-center text-slate-400 mb-6">Bugs that humans miss, automated tools ignore</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-slate-800/50 border border-red-700/50 rounded-lg p-4">
-                <p className="text-red-400 font-semibold mb-2">CRITICAL</p>
+                <p className="text-red-400 font-semibold mb-2">🔴 CRITICAL</p>
                 <ul className="space-y-2 text-sm text-slate-300">
-                  <li>✓ Same-bar entry/exit</li>
-                  <li>✓ Broken trend detection</li>
-                  <li>✓ Circuit breaker bugs</li>
-                  <li>✓ Inverted risk-reward</li>
+                  <li>✓ Same-bar entry/exit (lookahead bias)</li>
+                  <li>✓ Broken trend detection logic</li>
+                  <li>✓ Circuit breaker never resets</li>
+                  <li>✓ Inverted risk-reward ratios</li>
                 </ul>
               </div>
               <div className="bg-slate-800/50 border border-yellow-700/50 rounded-lg p-4">
-                <p className="text-yellow-400 font-semibold mb-2">MODERATE</p>
+                <p className="text-yellow-400 font-semibold mb-2">⚠️ MODERATE</p>
                 <ul className="space-y-2 text-sm text-slate-300">
                   <li>✓ Missing slippage & commissions</li>
                   <li>✓ Perfect fills assumptions</li>
                   <li>✓ Exit management mismatches</li>
-                  <li>✓ Statistical noise (small samples)</li>
+                  <li>✓ Statistical noise (tiny samples)</li>
                 </ul>
               </div>
             </div>
@@ -738,13 +747,13 @@ export default function Home() {
             The parameters weren't the problem. The bugs were.
           </p>
           <p>
-            We found them in 20 minutes. Fixed them. Rebuilt the strategy. Validated it across 7 years.
+            <span className="text-blue-400 font-semibold">Claude AI</span> found them in 20 minutes. Fixed them. Rebuilt the strategy. Validated it across 7 years.
           </p>
           <p className="text-green-400 font-bold text-2xl">
             Profit factor: 3.18. Walk-forward validated. Ready for paper trading.
           </p>
           <p className="text-slate-300">
-            Don't waste 10 months on broken code.
+            Don't waste 10 months debugging code when AI can find the bugs in minutes.
           </p>
         </div>
 
@@ -765,14 +774,21 @@ export default function Home() {
       {/* Footer */}
       <footer className="px-4 py-12 border-t border-slate-800">
         <div className="max-w-6xl mx-auto text-center space-y-4">
+          <div className="flex justify-center mb-4">
+            <img 
+              src="/sentinel-logo.jpg" 
+              alt="Sentinel Algo" 
+              className="w-16 h-16 object-contain"
+            />
+          </div>
           <p className="text-slate-400 italic">
-            "Built by a trader who's been there."
+            "Built by a trader who learned the hard way."
           </p>
           <p className="text-slate-300">
             I'm Mitch. I've spent 10 months building algorithmic trading systems for futures markets.
           </p>
           <p className="text-slate-300">
-            If you backtest strategies and want to catch bugs before you deploy, this is built for you.
+            I built Sentinel because I was tired of backtests lying to me. Now <span className="text-blue-400 font-semibold">Claude AI</span> finds the bugs I couldn't see.
           </p>
           <div className="flex justify-center gap-6 text-sm text-slate-400 pt-4">
             <a
@@ -785,7 +801,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-xs text-slate-500 pt-4">
-            © 2026 SentinelBacktest. Not financial advice.
+            © 2026 Sentinel Algo. Powered by Claude AI. Not financial advice.
           </p>
         </div>
       </footer>
