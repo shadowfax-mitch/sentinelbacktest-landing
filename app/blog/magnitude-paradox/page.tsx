@@ -8,13 +8,6 @@ export const metadata = {
 export default function MagnitudeParadoxArticle() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
-      {/* Header */}
-      <nav className="px-4 py-6 max-w-4xl mx-auto">
-        <Link href="/" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">
-          ← Back to Home
-        </Link>
-      </nav>
-
       {/* Article */}
       <article className="px-4 pb-20 max-w-4xl mx-auto">
         {/* Title Block */}

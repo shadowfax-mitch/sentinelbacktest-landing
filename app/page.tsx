@@ -462,6 +462,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="px-4 py-20 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-6">
+          About Sentinel Algo
+        </h2>
+        <p className="text-xl text-center text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+          Quantitative trading research project. We build, test, and publish algorithmic trading strategies — including our failures. Founded on radical transparency and evidence-driven development.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
+            <div className="text-4xl font-bold text-blue-400 mb-2">470K+</div>
+            <div className="text-slate-400">Bars Analyzed</div>
+          </div>
+          <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
+            <div className="text-4xl font-bold text-green-400 mb-2">13,000+</div>
+            <div className="text-slate-400">Configs Tested</div>
+          </div>
+          <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
+            <div className="text-4xl font-bold text-purple-400 mb-2">99.8%</div>
+            <div className="text-slate-400">Detection Accuracy</div>
+          </div>
+        </div>
+      </section>
+
       {/* Latest Research */}
       <section className="px-4 py-20 max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
@@ -552,6 +577,32 @@ export default function Home() {
               </p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="px-4 py-20 max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Contact
+        </h2>
+        <p className="text-slate-300 mb-8 text-lg">
+          Questions, ideas, or collaboration proposals — we read everything.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <a
+            href="mailto:sentinelalgotrading@gmail.com"
+            className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+          >
+            ✉️ sentinelalgotrading@gmail.com
+          </a>
+          <a
+            href="https://twitter.com/Sentinel_Algo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+          >
+            𝕏 @Sentinel_Algo
+          </a>
         </div>
       </section>
 
