@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -458,6 +459,41 @@ export default function Home() {
               Subscribe Below → Get Weekly Reports
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Latest Research */}
+      <section className="px-4 py-20 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
+          Latest Research
+        </h2>
+        <p className="text-xl text-center text-slate-300 mb-12 max-w-3xl mx-auto">
+          We publish our research — including our failures — because transparency accelerates progress.
+        </p>
+
+        <div className="max-w-2xl mx-auto">
+          <Link href="/blog/magnitude-paradox">
+            <Card className="bg-slate-800/50 border-slate-700 hover:border-blue-600/50 transition-colors cursor-pointer">
+              <CardHeader>
+                <div className="flex items-center gap-3 text-sm text-slate-400 mb-2">
+                  <span>February 13, 2026</span>
+                  <span>•</span>
+                  <span className="text-red-400 font-semibold">New</span>
+                </div>
+                <CardTitle className="text-2xl leading-tight">
+                  The Magnitude Paradox: We Built a 99.8% Accurate Market Instability Detector — and Can&apos;t Trade It
+                </CardTitle>
+                <CardDescription className="text-slate-400 text-base mt-2">
+                  13,000+ configurations. Two instruments. Five timeframes. We can predict <em>when</em> the market will make a big move with 99.8% accuracy. We just can&apos;t predict <em>which direction</em>.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <span className="text-blue-400 font-semibold text-sm">
+                  Read the full article →
+                </span>
+              </CardContent>
+            </Card>
+          </Link>
         </div>
       </section>
 
