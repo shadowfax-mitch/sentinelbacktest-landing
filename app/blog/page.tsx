@@ -11,10 +11,11 @@ export const metadata: Metadata = {
   },
 };
 
-const posts = [
+const series = [
   {
     slug: 'part1-the-gamble',
-    part: 1,
+    series: '10 Months to Sharpe 4.29',
+    part: 1 as number | null,
     title: 'The 10-Month Gamble',
     date: 'February 23, 2026',
     excerpt:
@@ -22,7 +23,8 @@ const posts = [
   },
   {
     slug: 'part2-inverted-shield',
-    part: 2,
+    series: '10 Months to Sharpe 4.29',
+    part: 2 as number | null,
     title: 'The Inverted Shield Discovery',
     date: 'March 2, 2026',
     excerpt:
@@ -30,7 +32,8 @@ const posts = [
   },
   {
     slug: 'part3-meta-controller',
-    part: 3,
+    series: '10 Months to Sharpe 4.29',
+    part: 3 as number | null,
     title: 'Building the Meta-Controller',
     date: 'March 9, 2026',
     excerpt:
@@ -38,13 +41,28 @@ const posts = [
   },
   {
     slug: 'part4-live-on-sim',
-    part: 4,
-    title: 'Live on the Sim — What\'s Next',
+    series: '10 Months to Sharpe 4.29',
+    part: 4 as number | null,
+    title: "Live on the Sim — What's Next",
     date: 'March 16, 2026',
     excerpt:
       'PCS is live on Sim101. First session MFE/MAE: $61.88 average MFE confirms entries are finding real inflection points. Exits are giving it back. Bobby trade manager is next. The path to $500/week starts here.',
   },
 ];
+
+const standalone = [
+  {
+    slug: 'magnitude-paradox',
+    series: 'Research',
+    part: null as number | null,
+    title: 'The Magnitude Paradox: We Built a 99.8% Accurate Market Instability Detector — and Can\'t Trade It',
+    date: 'February 13, 2026',
+    excerpt:
+      'We built a detector that identifies market instability with 99.8% accuracy. We have no idea how to trade it. Here\'s what we learned from 13,000+ configurations — and why a perfectly accurate detector can still be completely useless.',
+  },
+];
+
+const posts = [...standalone, ...series];
 
 export default function BlogIndex() {
   return (
@@ -59,32 +77,20 @@ export default function BlogIndex() {
 
         {/* Header */}
         <div className="mb-16">
-          <div className="inline-block bg-blue-900/30 border border-blue-600/50 rounded-lg px-4 py-2 mb-6">
-            <span className="text-blue-300 text-sm font-semibold">4-Part Series</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            10 Months to Sharpe 4.29
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Sentinel Algo Blog
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">
-            The real story of building the Pyramidal Coherence Strategy for MES futures — from
-            first principles to first live trade. Ten months of failures, discoveries, and the
-            system that survived them.
+            Real strategy testing results, regime research, and the honest story of building
+            algorithmic trading systems — including the failures.
           </p>
-          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { label: 'Final Sharpe', value: '4.29', color: 'text-green-400' },
-              { label: 'Max Drawdown', value: '$459', color: 'text-blue-400' },
-              { label: 'Win Rate', value: '62.7%', color: 'text-green-400' },
-              { label: 'OOS Period', value: '5.5 yrs', color: 'text-purple-400' },
-            ].map((stat) => (
-              <div
-                key={stat.label}
-                className="bg-slate-800/50 border border-slate-700 rounded-lg p-4 text-center"
-              >
-                <div className={`text-2xl font-bold ${stat.color}`}>{stat.value}</div>
-                <div className="text-slate-400 text-sm mt-1">{stat.label}</div>
-              </div>
-            ))}
+          <div className="mt-8 p-5 bg-blue-900/20 border border-blue-700/40 rounded-lg">
+            <div className="text-blue-300 text-sm font-semibold mb-2">📖 Featured Series</div>
+            <div className="text-white font-bold text-lg">10 Months to Sharpe 4.29</div>
+            <div className="text-slate-300 mt-1 text-sm">
+              The real story of building the Pyramidal Coherence Strategy — from first principles
+              to first live trade. 4 parts, published weekly.
+            </div>
           </div>
         </div>
 
@@ -95,7 +101,7 @@ export default function BlogIndex() {
               <div className="bg-slate-800/50 border border-slate-700 hover:border-blue-600/50 rounded-lg p-6 md:p-8 transition-all">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-sm font-semibold text-blue-400 bg-blue-900/30 border border-blue-800/50 rounded px-2 py-1">
-                    Part {post.part}
+                    {post.part !== null ? `Part ${post.part}` : post.series}
                   </span>
                   <span className="text-sm text-slate-500">{post.date}</span>
                 </div>
