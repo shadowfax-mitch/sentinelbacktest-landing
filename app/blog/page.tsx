@@ -52,13 +52,22 @@ const series = [
 
 const standalone = [
   {
-    slug: 'magnitude-paradox',
-    series: 'Research',
+    slug: 'bobby-trade-manager',
+    series: null as string | null,
     part: null as number | null,
-    title: 'The Magnitude Paradox: We Built a 99.8% Accurate Market Instability Detector — and Can\'t Trade It',
+    title: 'How I Built an AI Trade Manager That Turned -$40 Into +$231',
+    date: 'February 17, 2026',
+    excerpt:
+      'Our Sharpe 4.29 system averaged -$2.68 per trade. The entries were gold but exits were garbage. Then we built Bobby -- a 3-tier AI trade manager -- and everything changed.',
+  },
+  {
+    slug: 'magnitude-paradox',
+    series: 'Research' as string | null,
+    part: null as number | null,
+    title: "The Magnitude Paradox: We Built a 99.8% Accurate Market Instability Detector -- and Can't Trade It",
     date: 'February 13, 2026',
     excerpt:
-      'We built a detector that identifies market instability with 99.8% accuracy. We have no idea how to trade it. Here\'s what we learned from 13,000+ configurations — and why a perfectly accurate detector can still be completely useless.',
+      "We built a detector that identifies market instability with 99.8% accuracy. We have no idea how to trade it. Here's what we learned from 13,000+ configurations -- and why a perfectly accurate detector can still be completely useless.",
   },
 ];
 
@@ -101,7 +110,7 @@ export default function BlogIndex() {
               <div className="bg-slate-800/50 border border-slate-700 hover:border-blue-600/50 rounded-lg p-6 md:p-8 transition-all">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-sm font-semibold text-blue-400 bg-blue-900/30 border border-blue-800/50 rounded px-2 py-1">
-                    {post.part !== null ? `Part ${post.part}` : post.series}
+                    {post.part !== null ? `Part ${post.part}` : post.series ?? 'Standalone'}
                   </span>
                   <span className="text-sm text-slate-500">{post.date}</span>
                 </div>
