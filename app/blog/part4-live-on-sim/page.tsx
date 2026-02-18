@@ -2,9 +2,24 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Live on the Sim — What\'s Next — Sentinel Algo',
+  title: "Live on the Sim — What's Next — Sentinel Algo",
   description:
-    'Part 4 of "10 Months to Sharpe 4.29". PCS is live on Sim101. First session MFE/MAE: $61.88 average MFE. Entries are right. Exits are giving it back. Bobby trade manager is next.',
+    'Part 4 of "10 Months to Sharpe 4.29". PCS is live on Sim101. First session MFE/MAE: $61.88 average MFE confirms real inflection point detection. Exits need work. Bobby trade manager is next.',
+  openGraph: {
+    title: "Live on the Sim — What's Next (Part 4 of 4) — 10 Months to Sharpe 4.29",
+    description:
+      'PCS is live on Sim101. $61.88 average MFE. Entries are finding real edges — exits still need Bobby.',
+    type: 'article',
+    publishedTime: '2026-03-16',
+    authors: ['Sentinel Algo'],
+    images: ['/sentinel-hero-logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Live on the Sim — Sentinel Algo",
+    description: 'PCS Sim101: first real MFE data. Entries are working. Now we fix exits.',
+    images: ['/sentinel-hero-logo.jpg'],
+  },
 };
 
 export default function Part4() {

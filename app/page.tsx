@@ -468,22 +468,32 @@ export default function Home() {
           About Sentinel Algo
         </h2>
         <p className="text-xl text-center text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Quantitative trading research project. We build, test, and publish algorithmic trading strategies — including our failures. Founded on radical transparency and evidence-driven development.
+          Independent quantitative research lab. We spent 10 months and 23,520+ strategy tests to build a Sharpe 4.29 MES futures strategy — with 5.5 years of walk-forward validation behind it. We publish the failures because that&apos;s where the edge lives.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-10">
           <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-blue-400 mb-2">470K+</div>
-            <div className="text-slate-400">Bars Analyzed</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">Sharpe 4.29</div>
+            <div className="text-slate-400 text-sm">Live-validated PCS strategy</div>
           </div>
           <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-green-400 mb-2">13,000+</div>
-            <div className="text-slate-400">Configs Tested</div>
+            <div className="text-3xl font-bold text-green-400 mb-2">5.5 Years</div>
+            <div className="text-slate-400 text-sm">Walk-forward validation window</div>
           </div>
           <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-purple-400 mb-2">99.8%</div>
-            <div className="text-slate-400">Detection Accuracy</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">23,520+</div>
+            <div className="text-slate-400 text-sm">Strategies tested</div>
           </div>
+          <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
+            <div className="text-3xl font-bold text-red-400 mb-2">96.7%</div>
+            <div className="text-slate-400 text-sm">Failure rate — the learning engine</div>
+          </div>
+        </div>
+
+        <div className="text-center">
+          <Link href="/about" className="inline-block text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+            Read the full story →
+          </Link>
         </div>
       </section>
 
@@ -496,14 +506,14 @@ export default function Home() {
           We publish our research — including our failures — because transparency accelerates progress.
         </p>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto space-y-6">
           <Link href="/blog/magnitude-paradox">
             <Card className="bg-slate-800/50 border-slate-700 hover:border-blue-600/50 transition-colors cursor-pointer">
               <CardHeader>
                 <div className="flex items-center gap-3 text-sm text-slate-400 mb-2">
                   <span>February 13, 2026</span>
                   <span>•</span>
-                  <span className="text-red-400 font-semibold">New</span>
+                  <span className="text-red-400 font-semibold">Research Paper</span>
                 </div>
                 <CardTitle className="text-2xl leading-tight">
                   The Magnitude Paradox: We Built a 99.8% Accurate Market Instability Detector — and Can&apos;t Trade It
@@ -519,6 +529,12 @@ export default function Home() {
               </CardContent>
             </Card>
           </Link>
+
+          <div className="text-center pt-4">
+            <Link href="/research" className="inline-block bg-slate-800/50 border border-slate-700 hover:border-blue-600/40 text-blue-400 hover:text-blue-300 font-semibold px-6 py-3 rounded-lg transition-colors">
+              View All Research →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -580,6 +596,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Tools Teaser */}
+      <section className="px-4 py-20 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+          🛠️ Tools
+        </h2>
+        <p className="text-xl text-center text-slate-300 mb-10 max-w-3xl mx-auto">
+          The infrastructure we built to survive 23,520+ strategy tests — becoming standalone tools for serious algo traders.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+          <div className="bg-slate-800/50 border border-purple-900/50 rounded-lg p-6">
+            <div className="text-2xl mb-3">🛡️</div>
+            <h3 className="text-lg font-bold text-purple-400 mb-2">Sentinel Shield</h3>
+            <p className="text-slate-400 text-sm">AI-powered backtest bias detector. Caught $300K+ in phantom profits from leaky backtests.</p>
+            <span className="inline-block mt-3 text-xs bg-purple-900/40 text-purple-300 border border-purple-800/50 rounded-full px-2 py-1">Beta</span>
+          </div>
+          <div className="bg-slate-800/50 border border-blue-900/50 rounded-lg p-6">
+            <div className="text-2xl mb-3">🌐</div>
+            <h3 className="text-lg font-bold text-blue-400 mb-2">Regime Classifier</h3>
+            <p className="text-slate-400 text-sm">The same regime detection layer that powers PCS — as a standalone real-time tool.</p>
+            <span className="inline-block mt-3 text-xs bg-blue-900/40 text-blue-300 border border-blue-800/50 rounded-full px-2 py-1">Coming Soon</span>
+          </div>
+          <div className="bg-slate-800/50 border border-green-900/50 rounded-lg p-6">
+            <div className="text-2xl mb-3">⚡</div>
+            <h3 className="text-lg font-bold text-green-400 mb-2">0DTE Scanner</h3>
+            <p className="text-slate-400 text-sm">Regime-aware same-day expiry scanner for SPX/SPY options. High-probability entry windows.</p>
+            <span className="inline-block mt-3 text-xs bg-green-900/40 text-green-300 border border-green-800/50 rounded-full px-2 py-1">Coming Soon</span>
+          </div>
+        </div>
+        <div className="text-center">
+          <Link href="/tools" className="inline-block bg-slate-800/50 border border-slate-700 hover:border-purple-600/40 text-purple-400 hover:text-purple-300 font-semibold px-6 py-3 rounded-lg transition-colors">
+            See All Tools →
+          </Link>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="px-4 py-20 max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -610,13 +661,17 @@ export default function Home() {
       <footer className="px-4 py-12 border-t border-slate-800 max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400">
-            © 2026 Sentinel. Built by a trader who tested 23,520+ strategies.
+            © 2026 Sentinel Algo. Built by a trader who tested 23,520+ strategies.
           </p>
-          <div className="flex gap-6">
-            <a href="https://twitter.com/Sentinel_Algo" className="text-slate-400 hover:text-blue-400">
-              Twitter/X
+          <div className="flex flex-wrap gap-6 justify-center">
+            <Link href="/blog" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Blog</Link>
+            <Link href="/research" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Research</Link>
+            <Link href="/tools" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Tools</Link>
+            <Link href="/about" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">About</Link>
+            <a href="https://twitter.com/Sentinel_Algo" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">
+              𝕏 @Sentinel_Algo
             </a>
-            <a href="/newsletter.html" className="text-slate-400 hover:text-blue-400">
+            <a href="/newsletter.html" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">
               Newsletter
             </a>
           </div>

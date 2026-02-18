@@ -1,8 +1,25 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'The Magnitude Paradox — Sentinel Algo',
-  description: 'We built a 99.8% accurate market instability detector — and can\'t trade it. Here\'s what we learned from 13,000+ configurations.',
+  description:
+    "We built a 99.8% accurate market instability detector — and can't trade it. 13,000+ configurations, two instruments, five timeframes. Here's what we learned.",
+  openGraph: {
+    title: "The Magnitude Paradox: A 99.8% Accurate Detector We Can't Trade",
+    description:
+      "13,000+ configurations. Two instruments. Five timeframes. We can predict WHEN the market will make a big move — just not which direction.",
+    type: 'article',
+    publishedTime: '2026-02-13',
+    authors: ['Sentinel Algo'],
+    images: ['/sentinel-hero-logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "The Magnitude Paradox — Sentinel Algo",
+    description: "99.8% detection accuracy. Still can't trade it. Here's why.",
+    images: ['/sentinel-hero-logo.jpg'],
+  },
 };
 
 export default function MagnitudeParadoxArticle() {

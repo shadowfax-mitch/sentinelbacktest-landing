@@ -4,7 +4,22 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Inverted Shield Discovery — Sentinel Algo',
   description:
-    'Part 2 of "10 Months to Sharpe 4.29". A volatility filter built to keep us out of dangerous markets turned out to label the most profitable regime in the dataset. Profit factor: 0.332 vs 3.288 — a 10x difference.',
+    'Part 2 of "10 Months to Sharpe 4.29". A volatility filter built to keep us out of dangerous markets turned out to label the most profitable regime. Profit factor: 0.332 vs 3.288 — a 10x difference hiding inside the same signal.',
+  openGraph: {
+    title: 'The Inverted Shield Discovery (Part 2 of 4) — 10 Months to Sharpe 4.29',
+    description:
+      'Profit factor 0.332 in the poison regime. 3.288 in the gold regime. A 10x difference hiding in one signal.',
+    type: 'article',
+    publishedTime: '2026-03-02',
+    authors: ['Sentinel Algo'],
+    images: ['/sentinel-hero-logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Inverted Shield Discovery — Sentinel Algo',
+    description: 'A "filter" turned out to be the most powerful regime signal we had.',
+    images: ['/sentinel-hero-logo.jpg'],
+  },
 };
 
 export default function Part2() {

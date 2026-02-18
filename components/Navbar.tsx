@@ -4,10 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const navLinks = [
-  { label: 'About', href: '/#about' },
-  { label: 'Research', href: '/blog/magnitude-paradox' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Research', href: '/research' },
+  { label: 'Tools', href: '/tools' },
+  { label: 'About', href: '/about' },
   { label: 'Newsletter', href: '/#waitlist' },
-  { label: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -33,6 +34,14 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="https://twitter.com/Sentinel_Algo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-300 hover:text-blue-400 text-sm font-medium transition-colors"
+          >
+            𝕏 Follow
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -64,6 +73,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="https://twitter.com/Sentinel_Algo"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="block py-3 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
+          >
+            𝕏 Follow @Sentinel_Algo
+          </Link>
         </div>
       )}
     </nav>

@@ -4,7 +4,22 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The 10-Month Gamble — Sentinel Algo',
   description:
-    'Part 1 of "10 Months to Sharpe 4.29". The Pyramidal Coherence Strategy places its first live trade. This is the story of how we got there — the failures, the philosophy, and the system that survived them.',
+    'Part 1 of "10 Months to Sharpe 4.29". The Pyramidal Coherence Strategy places its first live trade after 10 months of development. 23,520+ strategies tested. 96.7% failed. Here\'s how we got here.',
+  openGraph: {
+    title: 'The 10-Month Gamble (Part 1 of 4) — 10 Months to Sharpe 4.29',
+    description:
+      'February 16, 2026. First live trade after 10 months of development. The real story — failures included.',
+    type: 'article',
+    publishedTime: '2026-02-23',
+    authors: ['Sentinel Algo'],
+    images: ['/sentinel-hero-logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The 10-Month Gamble — Sentinel Algo',
+    description: '10 months. 23,520+ strategies. 96.7% failure rate. Here\'s how PCS survived.',
+    images: ['/sentinel-hero-logo.jpg'],
+  },
 };
 
 export default function Part1() {

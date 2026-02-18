@@ -2,12 +2,21 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '10 Months to Sharpe 4.29 — Sentinel Algo Blog',
-  description: 'The real story of building the Pyramidal Coherence Strategy for MES futures. From first principles to first live trade — including the failures.',
+  title: 'Blog — Sentinel Algo',
+  description:
+    'Real strategy testing results, regime research, and the honest story of building algorithmic trading systems — including the failures. "10 Months to Sharpe 4.29" series and more.',
   openGraph: {
-    title: '10 Months to Sharpe 4.29 — Sentinel Algo Blog',
-    description: 'The real story of building the Pyramidal Coherence Strategy for MES futures.',
+    title: 'Sentinel Algo Blog — Real Algo Trading Research',
+    description:
+      'The unfiltered story of building Sharpe 4.29 from 23,520+ strategy tests. Every failure documented.',
     type: 'website',
+    images: ['/sentinel-hero-logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sentinel Algo Blog',
+    description: 'Real results. Real failures. 10 months to Sharpe 4.29.',
+    images: ['/sentinel-hero-logo.jpg'],
   },
 };
 
@@ -126,21 +135,28 @@ export default function BlogIndex() {
           ))}
         </div>
 
-        {/* Footer */}
-        <div className="mt-16 pt-8 border-t border-slate-800 text-center">
-          <p className="text-slate-400">
-            Follow the live trading journey at{' '}
+        {/* CTA */}
+        <div className="mt-16 bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Never Miss a Post</h2>
+          <p className="text-slate-300 mb-6 max-w-xl mx-auto">
+            New articles every week. Subscribe to the Sentinel Report for direct delivery every Sunday at 7 PM CT — plus exclusive strategy testing results not published here.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              href="/#waitlist"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition"
+            >
+              Subscribe Free →
+            </Link>
             <a
               href="https://twitter.com/Sentinel_Algo"
-              className="text-blue-400 hover:text-blue-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 font-medium transition"
             >
-              @Sentinel_Algo
-            </a>{' '}
-            or subscribe at{' '}
-            <Link href="/" className="text-blue-400 hover:text-blue-300 transition-colors">
-              sentinel-algo.com
-            </Link>
-          </p>
+              𝕏 Follow @Sentinel_Algo
+            </a>
+          </div>
         </div>
       </div>
     </main>

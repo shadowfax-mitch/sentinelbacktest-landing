@@ -2,9 +2,24 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How I Built an AI Trade Manager That Turned -$40 Into +$231 -- Sentinel Algo',
+  title: 'How I Built an AI Trade Manager That Turned -$40 Into +$231 — Sentinel Algo',
   description:
-    'Our Sharpe 4.29 system averaged -$2.68 per trade. The entries were gold but exits were garbage. Then we built Bobby -- a 3-tier AI trade manager -- and everything changed.',
+    'Our Sharpe 4.29 system averaged -$2.68 per trade. The entries were gold — exits were garbage. Then we built Bobby: a 3-tier AI trade manager. Here\'s exactly how it works.',
+  openGraph: {
+    title: 'How I Built Bobby: The AI Trade Manager That Turned -$40 Into +$231',
+    description:
+      'Sharpe 4.29 system. -$2.68/trade average. The problem wasn\'t the strategy — it was the exits. Bobby fixed that.',
+    type: 'article',
+    publishedTime: '2026-02-17',
+    authors: ['Sentinel Algo'],
+    images: ['/sentinel-hero-logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Building Bobby: The AI Trade Manager — Sentinel Algo',
+    description: '-$40 → +$231. Here\'s how an AI trade manager saved a Sharpe 4.29 strategy.',
+    images: ['/sentinel-hero-logo.jpg'],
+  },
 };
 
 export default function BobbyTradeManager() {

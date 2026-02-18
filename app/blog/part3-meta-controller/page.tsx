@@ -4,7 +4,22 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Building the Meta-Controller — Sentinel Algo',
   description:
-    'Part 3 of "10 Months to Sharpe 4.29". One regime layer wasn\'t enough. The two-layer solution: drawdown-from-peak macro stress controller + pyramidal coherence micro regime. Sharpe jumped from 2.31 to 4.29.',
+    "Part 3 of '10 Months to Sharpe 4.29'. One regime layer wasn't enough. Two-layer solution: drawdown-from-peak macro stress controller + pyramidal coherence micro regime. Sharpe jumped from 2.31 to 4.29.",
+  openGraph: {
+    title: 'Building the Meta-Controller (Part 3 of 4) — 10 Months to Sharpe 4.29',
+    description:
+      'Sharpe 2.31 → 4.29 with a two-layer adaptive architecture. Here\'s how the meta-controller was built.',
+    type: 'article',
+    publishedTime: '2026-03-09',
+    authors: ['Sentinel Algo'],
+    images: ['/sentinel-hero-logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Building the Meta-Controller — Sentinel Algo',
+    description: 'Sharpe 2.31 → 4.29. Two-layer regime architecture that changed everything.',
+    images: ['/sentinel-hero-logo.jpg'],
+  },
 };
 
 export default function Part3() {
