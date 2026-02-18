@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sentinel Report #001 | AI-Powered Trading Intelligence</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+        h1, h2, h3 { color: #60a5fa; }
+        h1 { font-size: 2.5em; border-bottom: 3px solid #60a5fa; padding-bottom: 10px; }
+        h2 { font-size: 1.8em; margin-top: 40px; border-left: 4px solid #60a5fa; padding-left: 15px; }
+        .highlight { background: #1e293b; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #34d399; }
+        .stats { background: #1e293b; padding: 15px; border-radius: 8px; }
+        .stats ul { list-style: none; padding: 0; }
+        .stats li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #334155; }
+        .stats li:last-child { border-bottom: none; }
+        .number { color: #34d399; font-weight: bold; }
+        .warning { color: #fbbf24; font-weight: bold; }
+        .error { color: #ef4444; font-weight: bold; }
+        a { color: #60a5fa; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .cta { background: #2563eb; color: white; padding: 15px 30px; text-align: center; border-radius: 8px; margin: 30px 0; display: block; font-weight: bold; }
+        .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #334155; font-size: 0.9em; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+<h1>The Sentinel Report #001</h1>
+<p style="color: #94a3b8; font-size: 1.1em; margin-top: -10px;">AI-Powered Trading Intelligence | Feb 12, 2026</p>
+<p style="font-style: italic; color: #cbd5e1;">Co-authored by Mitch + Sentinel AI</p>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>📊 Market Regime Analysis</h2>
+<p><strong>Week of Feb 10-14, 2026 | MNQ Focus</strong></p>
+
+<p>This week's regime breakdown reveals why Wednesday's FOMC session crushed so many breakout strategies—and rewarded the patient mean-reversion traders.</p>
+
+<div class="stats">
+    <p><strong>Regime Distribution:</strong></p>
+    <ul>
+        <li><span>R0 (Balanced):</span> <span class="number">28% of week</span></li>
+        <li><span>R1 (High-Vol Chop):</span> <span class="error">48% of week 🔥</span></li>
+        <li><span>R2 (Trending):</span> <span class="number">19% of week</span></li>
+        <li><span>R3 (Extreme Vol):</span> <span class="number">5% of week</span></li>
+    </ul>
+</div>
+
+<div class="highlight">
+    <p><strong>Key Insight:</strong> Wednesday 2-4 PM window = 92% R1 allocation (pure chop). MNQ whipsawed through 3 failed breakout attempts. Range compression → expansion → compression within 2-hour window.</p>
+</div>
+
+<p><strong>What Worked:</strong> Mean reversion at Z>4.5 extremes posted 87% win rate during R1 dominance. Tight ranges + high volatility = ideal reversion conditions.</p>
+
+<p><strong>What Failed:</strong> Opening range breakouts, EMA cross strategies, momentum continuation plays. All got chopped.</p>
+
+<p><strong>Implication:</strong> If your strategy lost money Wed afternoon, it's probably regime-blind, not broken. Markets switched games. Did your strategy adapt?</p>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>🧪 Strategy Lab Update</h2>
+<p><strong>What Sentinel Tested This Week: 847 Configurations</strong></p>
+
+<h3 style="color: #34d399;">Test #1: Fractal Reversion V5.1 ✅ PROMISING</h3>
+
+<p><strong>Concept:</strong> Combine fractal swing point detection with Z-score extremes and R1 regime filter.</p>
+
+<p><strong>Tested:</strong> 847 parameter combinations overnight Mon-Tue</p>
+<p><strong>Best Config:</strong> Z=5.2, fractal lookback=34 bars, R1-only filter</p>
+
+<div class="stats">
+    <p><strong>Results (18-month backtest):</strong></p>
+    <ul>
+        <li><span>Trades:</span> <span class="number">87</span></li>
+        <li><span>Win Rate:</span> <span class="number">73%</span></li>
+        <li><span>Profit Factor:</span> <span class="number">2.4</span></li>
+        <li><span>Avg Trade:</span> <span class="number">$31.40</span></li>
+        <li><span>Max Drawdown:</span> <span class="error">$512</span></li>
+    </ul>
+</div>
+
+<p><strong>Status:</strong> <span class="warning">PROMISING</span> - Moving to out-of-sample validation this week</p>
+
+<p><strong>Why It Matters:</strong> Combines V1's fractal geometry insight with V4's Z-score extremes. Novel synthesis, not rehashed indicators.</p>
+
+<hr>
+
+<h3 style="color: #ef4444;">Test #2: Opening Range Breakout Redux ❌ FAILED</h3>
+
+<p><strong>Concept:</strong> Revisited ORB strategy after fixing V3's lookahead bias.</p>
+
+<div class="stats">
+    <p><strong>Results:</strong></p>
+    <ul>
+        <li><span>Trades:</span> <span>412</span></li>
+        <li><span>Win Rate:</span> <span class="error">48%</span></li>
+        <li><span>Profit Factor:</span> <span class="error">0.89 (LOSING)</span></li>
+    </ul>
+</div>
+
+<p><strong>Status:</strong> <span class="error">REJECTED</span> - Confirmed V3 findings: breakouts don't work in chop-dominant markets</p>
+
+<p><strong>Lesson:</strong> Don't waste time re-testing strategies the data already rejected. 96% of configs fail for a reason.</p>
+
+<hr>
+
+<p><strong>Overnight Queue (Running This Weekend):</strong></p>
+<ul>
+    <li>Multi-timeframe fractal confluence (3 timeframes)</li>
+    <li>Volume-weighted regime detection</li>
+    <li>Hybrid: Trend-following in R2, mean-reversion in R1</li>
+</ul>
+
+<p><strong>Running Total:</strong> 24,367 strategy configurations tested (lifetime)</p>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>💡 Trader Insight: When "Good Enough" Isn't</h2>
+<p style="font-style: italic;">By Mitch</p>
+
+<p>This week I caught myself wanting to deploy a strategy with 47 trades.</p>
+
+<p>47. Not 100. Not even 75.</p>
+
+<p>Why? Because it LOOKED good. 68% win rate. 2.1 profit factor. Clean equity curve.</p>
+
+<p>But here's what I learned from V4's failure: <strong>Small samples lie.</strong></p>
+
+<div class="highlight">
+    <p>V4 Zone Scalper: <span class="number">+$4,966 on 8 trades</span> in backtest.<br>
+    Live result: <span class="error">FAILED</span> over 10 weeks.</p>
+</div>
+
+<p>The difference between 47 trades and 100 isn't perfectionism. It's the difference between <strong>HOPE</strong> and <strong>EVIDENCE</strong>.</p>
+
+<p>Sentinel can test 1,000 configurations overnight. I could find another 50+ trades by tomorrow. But I want to RUSH because I'm human and humans hate waiting.</p>
+
+<p>This is where AI helps. Sentinel doesn't get excited. It doesn't feel FOMO. It just runs the numbers.</p>
+
+<p>My job: <strong>Trust the process. Wait for 100+ trades. Deploy when PROVEN, not when PROMISING.</strong></p>
+
+<p>Your edge isn't in the strategy. It's in the <strong>DISCIPLINE</strong> to validate it properly.</p>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>📚 Deep Dive: What is Regime-Aware Trading?</h2>
+
+<p>Most strategies have a fatal flaw: They assume markets behave the same way all the time.</p>
+
+<p>They don't.</p>
+
+<p>Think of markets like weather. Your strategy is your clothing choice.</p>
+
+<ul>
+    <li><strong>Sunny day (R2 - Trending):</strong> Breakouts work. Mean reversion fails. Wear shorts.</li>
+    <li><strong>Rainy day (R1 - Chop):</strong> Breakouts fail. Mean reversion works. Bring umbrella.</li>
+    <li><strong>Hurricane (R3 - Extreme):</strong> Nothing works reliably. Stay inside.</li>
+</ul>
+
+<p><strong>Static strategies = wearing shorts in a hurricane.</strong></p>
+
+<h3>How Sentinel Classifies Regimes:</h3>
+
+<ol>
+    <li><strong>Wave Energy Analysis</strong> (amplitude × frequency)</li>
+    <li><strong>Fractal Structure</strong> (swing point density)</li>
+    <li><strong>Volatility Profile</strong> (ATR normalization)</li>
+    <li><strong>Volume Distribution</strong> (order flow imbalance)</li>
+</ol>
+
+<p><strong>Output:</strong> R0 (balanced), R1 (chop), R2 (trend), R3 (extreme)</p>
+
+<h3>Why This Matters:</h3>
+
+<p>Your RSI < 30 "buy signal" works in <strong>R2</strong> (trending).<br>
+It <strong>LOSES</strong> in <strong>R1</strong> (chop) because price whipsaws through oversold.</p>
+
+<p><strong>Regime-aware strategy:</strong> Only take RSI signals in R2. Switch to mean reversion in R1. Reduce size in R3.</p>
+
+<p><strong>Result:</strong> Your strategy <strong>ADAPTS</strong> instead of <strong>BREAKS</strong>.</p>
+
+<p>This isn't rocket science. It's survival.</p>
+
+<p><strong>Next week:</strong> How to detect regime shifts in real-time (without AI).</p>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>📊 This Week By The Numbers</h2>
+
+<div class="stats">
+    <ul>
+        <li><span>Strategies Tested:</span> <span class="number">847</span></li>
+        <li><span>Backtests Run:</span> <span class="number">4,223</span></li>
+        <li><span>Trades Validated:</span> <span class="number">87</span></li>
+        <li><span>Profitable Configs:</span> <span class="warning">23 (2.7% success rate)</span></li>
+        <li><span>Hours You Slept While Sentinel Worked:</span> <span class="number">56</span></li>
+    </ul>
+</div>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>🚀 Ready to Let AI Accelerate Your Research?</h2>
+
+<p>Join the Sentinel community and get exclusive access to:</p>
+
+<ul>
+    <li>✅ Proprietary AI strategy development</li>
+    <li>✅ Overnight backtesting (1000+ tests while you sleep)</li>
+    <li>✅ Real-time regime detection alerts</li>
+    <li>✅ Weekly Strategy Lab reports</li>
+    <li>✅ Members-only case studies</li>
+</ul>
+
+<a href="https://sentinel-algo.com" class="cta">Start Your Free Strategy Analysis → sentinel-algo.com</a>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>📌 Follow The Journey</h2>
+
+<p><strong>X/Twitter:</strong> <a href="https://twitter.com/Sentinel_Algo">@Sentinel_Algo</a> (daily updates)<br>
+<strong>Website:</strong> <a href="https://sentinel-algo.com">sentinel-algo.com</a> (case studies + blog)</p>
+
+<p>Got questions? Hit reply. I read every email.</p>
+
+<hr style="border: 1px solid #334155; margin: 40px 0;">
+
+<h2>📅 Next Week's Report</h2>
+
+<p><strong>Coming Feb 19:</strong></p>
+<ul>
+    <li>V5 Fractal Reversion out-of-sample results (100+ trades?)</li>
+    <li>How to detect regime shifts without AI (manual method)</li>
+    <li>Case Study: "V4 Mean Reversion - Anatomy of a $1,178 Edge"</li>
+    <li>Member Q&A: Your questions answered</li>
+</ul>
+
+<p>See you next week,</p>
+
+<p><strong>Mitch + Sentinel</strong></p>
+
+<div class="footer">
+    <p><strong>⚠️ DISCLAIMER:</strong> Past performance is not indicative of future results. Trading futures involves substantial risk of loss. All strategies shared are for educational purposes. The Sentinel Report is not investment advice.</p>
+    
+    <p style="margin-top: 20px;"><em>Copyright © 2026 Sentinel Trading. All rights reserved.</em></p>
+</div>
+
+</body>
+</html>
